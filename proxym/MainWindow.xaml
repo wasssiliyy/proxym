@@ -1,0 +1,47 @@
+﻿<Window x:Class="proxym.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:proxym"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <ListBox 
+                       Name="TextB" 
+                       Height="200"
+                       FontSize="18"
+                       FontWeight="ExtraBlack"></ListBox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBox Height="50" 
+                             Width="300" 
+                             HorizontalAlignment="Left" 
+                             Name="txtb"
+                             TextChanged="txtb_TextChanged"
+                             ></TextBox>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Button Height="50" 
+                            Width="100" 
+                            HorizontalAlignment="Right"
+                            FontSize="23"
+                            FontWeight="DemiBold"
+                            Name="Btn"
+                            Click="Btn_Click">SUBMIT</Button>
+
+                </Grid>
+            </Grid>
+            <ListBox Height="184"
+                     Name="ListB"
+                     FontSize="18"
+                     FontWeight="ExtraBlack"></ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
